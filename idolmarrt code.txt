@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IdolMart</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      text-decoration: none;
+      list-style: none;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Merriweather', serif;
+      background-image: url('bgb.png');
+      height: 100vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0;
+      color: #333;
+    }
+    header {
+      background-color: no color(srgb red green blue);
+      color: Black;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 50px;
+      font-size: 25px;
+    }
+    nav {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      background: #0b3d91;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+    .logo {
+      font-size: 35px;
+      font-weight: bold;
+      color: #ff69b4;
+    }
+    .checkbtn {
+      font-size: 30px;
+      color: #ff69b4;
+      cursor: pointer;
+      display: block;
+    }
+    #check {
+      display: none;
+    }
+    nav ul {
+      position: fixed;
+      width: 100%;
+      top: 80px;
+      left: -100%;
+      background: #0b3d91;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s;
+    }
+    nav ul li {
+      margin: 10px;
+    }
+    nav ul li a {
+      color: #ff69b4;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-transform: uppercase;
+    }
+    nav ul li a:hover {
+      background: #ff69b4;
+      color: #333;
+    }
+    #check:checked ~ ul {
+      left: 0;
+      flex-direction: row;
+    }
+    footer {
+      background-color: #0b3d91;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    @media (min-width: 600px) {
+      nav ul {
+        position: static;
+        display: flex;
+        justify-content: flex-end;
+      }
+      nav ul li {
+        margin: 0 10px;
+      }
+      .checkbtn {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><img src="idolmart logo.png" alt="kpop image" width="300"></h1>
+<h1> Welcome to K-Pop Merchandise Center </h1>
+<h6> IdolMart is your ultimate friend in finding
+     high-quality merch from your favorite K-pop groups.</h6>
+  </header>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">IdolMart</label>
+    <ul>
+      <li><a class="active" href="Home.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Merch.html">Merchandise</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+      <li><a href="Merch.html">Others</a></li>
+    </ul>
+  </nav>
+ 
+  <footer>
+    <p>© 2024 IdolMart. All rights reserved.</p>
+  </footer>
+</body>
+</html>
